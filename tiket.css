@@ -1,0 +1,121 @@
+
+/* tiket.css */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #6dd5fa, #2980b9);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadeInBody 1.5s ease;
+}
+
+@keyframes fadeInBody {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+main {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    animation: popUp 1s ease;
+}
+
+@keyframes popUp {
+    0% { transform: scale(0.8); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+#book h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #2980b9;
+    animation: slideDown 1s ease;
+}
+
+@keyframes slideDown {
+    from { transform: translateY(-50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    animation: fadeInForm 2s ease;
+}
+
+@keyframes fadeInForm {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+label {
+    margin: 10px 0 5px;
+    font-weight: bold;
+    color: #333;
+    animation: fadeInLabel 1.5s ease;
+}
+
+@keyframes fadeInLabel {
+    from { opacity: 0; transform: translateX(-30px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.3s;
+    animation: fadeInInput 1.5s ease;
+}
+
+@keyframes fadeInInput {
+    from { opacity: 0; transform: translateX(30px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+input:focus {
+    border-color: #2980b9;
+}
+
+button {
+    margin-top: 20px;
+    padding: 12px;
+    background-color: #2980b9;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.2s;
+    animation: fadeInButton 2s ease;
+}
+
+@keyframes fadeInButton {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+button:hover {
+    background-color: #1b6391;
+    transform: scale(1.05);
+}
+
+#bookingStatus {
+    margin-top: 20px;
+    font-size: 18px;
+    text-align: center;
+    color: green;
+    animation: fadeInStatus 2s ease;
+}
+
+@keyframes fadeInStatus {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
